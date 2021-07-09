@@ -1,0 +1,140 @@
+
+.htr {
+  --htr-forms-button-color1-h: 0;
+  --htr-forms-button-color1-s: 0%;
+  --htr-forms-button-color1-l: 0%;
+  --htr-forms-button-color1-a: 0.8;
+
+  --htr-forms-button-color2-h: 0;
+  --htr-forms-button-color2-s: 0%;
+  --htr-forms-button-color2-l: 100%;
+  --htr-forms-button-color2-a: 0.8;
+
+  --htr-forms-button-color3-h: 0;
+  --htr-forms-button-color3-s: 0%;
+  --htr-forms-button-color3-l: 0%;
+  --htr-forms-button-color3-a: 0.8;
+
+  --htr-forms-button-color1_hover-h: 0;
+  --htr-forms-button-color1_hover-s: 0%;
+  --htr-forms-button-color1_hover-l: 100%;
+  --htr-forms-button-color1_hover-a: 0.8;
+
+  --htr-forms-button-color2_hover-h: 0;
+  --htr-forms-button-color2_hover-s: 0%;
+  --htr-forms-button-color2_hover-l: 0%;
+  --htr-forms-button-color2_hover-a: 0.8;
+
+  --htr-forms-button-color1_disabled-h: 0;
+  --htr-forms-button-color1_disabled-s: 0%;
+  --htr-forms-button-color1_disabled-l: 0%;
+  --htr-forms-button-color1_disabled-a: 0.5;
+
+  --htr-forms-button-color2_disabled-h: 0;
+  --htr-forms-button-color2_disabled-s: 0%;
+  --htr-forms-button-color2_disabled-l: 100%;
+  --htr-forms-button-color2_disabled-a: 1;
+
+  /**
+   * Riffle colors
+   */
+  --htr-forms-button-riffle-color-h: 0;
+  --htr-forms-button-riffle-color-s: 0%;
+  --htr-forms-button-riffle-color-l: 0%;
+  --htr-forms-button-riffle-color-a: 0.2;
+}
+
+.htr button {
+  /**
+   * Button color definitions
+   */
+  --htr-forms-button-color1: hsla(var(--htr-forms-button-color1-h), var(--htr-forms-button-color1-s), var(--htr-forms-button-color1-l), var(--htr-forms-button-color1-a));
+  --htr-forms-button-color2: hsla(var(--htr-forms-button-color2-h), var(--htr-forms-button-color2-s), var(--htr-forms-button-color2-l), var(--htr-forms-button-color2-a));
+  --htr-forms-button-color3: hsla(var(--htr-forms-button-color3-h), var(--htr-forms-button-color3-s), var(--htr-forms-button-color3-l), var(--htr-forms-button-color3-a));
+  --htr-forms-button-color1_disabled: hsla(var(--htr-forms-button-color1_disabled-h), var(--htr-forms-button-color1_disabled-s), var(--htr-forms-button-color1_disabled-l), var(--htr-forms-button-color1_disabled-a));
+  --htr-forms-button-color2_disabled: hsla(var(--htr-forms-button-color2_disabled-h), var(--htr-forms-button-color2_disabled-s), var(--htr-forms-button-color2_disabled-l), var(--htr-forms-button-color2_disabled-a));
+  --htr-forms-button-padding: 1em;
+  --htr-forms-button-font: 1em;
+  --htr-forms-button-border: 0.1em;
+  --htr-forms-button-transition_time: 0.2s;
+
+  background-color: var(--htr-forms-button-color1);
+  color: var(--htr-forms-button-color2);
+  border: var(--htr-forms-button-border) solid var(--htr-forms-button-color3);
+  padding: var(--htr-forms-button-padding) calc(var(--htr-forms-button-padding) * 2);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--htr-forms-button-font);
+  transition: background-color var(--htr-forms-button-transition_time);
+  user-select: none;
+  cursor: pointer;
+  min-width: calc(var(--htr-forms-button-padding) * 10);
+}
+
+.htr button:hover:not([disabled]):not([riffle="simple"]), .htr button[hover] {
+  --htr-forms-button-color1: hsla(var(--htr-forms-button-color1_hover-h), var(--htr-forms-button-color1_hover-s), var(--htr-forms-button-color1_hover-l), var(--htr-forms-button-color1_hover-a));
+  --htr-forms-button-color2: hsla(var(--htr-forms-button-color2_hover-h), var(--htr-forms-button-color2_hover-s), var(--htr-forms-button-color2_hover-l), var(--htr-forms-button-color2_hover-a));
+}
+
+.htr button:focus:not([riffle="simple"]), .htr button[focus] {
+  box-shadow: 0 0 0 calc(var(--htr-forms-button-font) / 8) var(--htr-forms-button-color3);
+  --htr-forms-button-color1: hsla(var(--htr-forms-button-color1_hover-h), var(--htr-forms-button-color1_hover-s), var(--htr-forms-button-color1_hover-l), var(--htr-forms-button-color1_hover-a));
+  --htr-forms-button-color2: hsla(var(--htr-forms-button-color2_hover-h), var(--htr-forms-button-color2_hover-s), var(--htr-forms-button-color2_hover-l), var(--htr-forms-button-color2_hover-a));
+}
+
+.htr button[disabled] {
+  background: var(--htr-forms-button-color1_disabled);
+  color: var(--htr-forms-button-color2_disabled);
+  cursor: not-allowed;
+}
+
+
+/**
+ * Button with icon
+ */
+.htr button svg {
+  fill: var(--htr-forms-button-color2);
+  vertical-align: middle;
+  display: inline-block;
+  height: var(--htr-forms-button-font);
+  width: auto;
+  margin-right: calc(var(--htr-forms-button-padding) / 2);
+}
+
+/**
+ * Riffle Effect
+ */
+.htr button[riffle] {
+  --htr-forms-button-riffle-color: hsla(var(--htr-forms-button-riffle-color-h), var(--htr-forms-button-riffle-color-s), var(--htr-forms-button-riffle-color-l), var(--htr-forms-button-riffle-color-a));
+  overflow: hidden;
+  position: relative;
+}
+
+.htr button[riffle="simple"] {
+  /**
+   * TODO: Rebase color room
+   */
+  --htr-forms-button-riffle-color: hsla(calc(var(--htr-forms-button-riffle-color-h) + 180), var(--htr-forms-button-riffle-color-s), var(--htr-forms-button-riffle-color-l), var(--htr-forms-button-riffle-color-a));
+}
+
+.htr button[riffle]:after {
+  transition-duration: calc(var(--htr-forms-button-transition_time) * 3);
+  content: "";
+  background: var(--htr-forms-button-riffle-color);
+  display: block;
+  position: absolute;
+  padding-top: 500%;
+  padding-left: 500%;
+  margin-left: -100%;
+  margin-top: -100%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.htr button[riffle]:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
