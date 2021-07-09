@@ -1,0 +1,106 @@
+
+.htr {
+  --htr-forms-input-font: 1.2em;
+  --htr-forms-input-padding: 0.75em;
+  --htr-forms-input-margin: 1em;
+
+  --htr-forms-input-color1-h: 0;
+  --htr-forms-input-color1-s: 0%;
+  --htr-forms-input-color1-l: 0%;
+  --htr-forms-input-color1-a: 10%;
+
+  --htr-forms-input-color2-h: 0;
+  --htr-forms-input-color2-s: 0%;
+  --htr-forms-input-color2-l: 0%;
+  --htr-forms-input-color2-a: 0.8;
+
+  --htr-forms-input-color3-h: 0;
+  --htr-forms-input-color3-s: 0%;
+  --htr-forms-input-color3-l: 0%;
+  --htr-forms-input-color3-a: 0.8;
+
+  --htr-forms-input-color1_hover-h: 0;
+  --htr-forms-input-color1_hover-s: 0%;
+  --htr-forms-input-color1_hover-l: 100%;
+  --htr-forms-input-color1_hover-a: 0.8;
+
+  --htr-forms-input-color2_hover-h: 0;
+  --htr-forms-input-color2_hover-s: 0%;
+  --htr-forms-input-color2_hover-l: 0%;
+  --htr-forms-input-color2_hover-a: 0.8;
+}
+
+.htr label {
+}
+
+.htr label::after {
+  content: "\a\a";
+  white-space: pre;
+}
+
+
+.htr input {
+  --htr-forms-input-color1: hsla(var(--htr-forms-input-color1-h), var(--htr-forms-input-color1-s), var(--htr-forms-input-color1-l), var(--htr-forms-input-color1-a));
+  --htr-forms-input-color2: hsla(var(--htr-forms-input-color2-h), var(--htr-forms-input-color2-s), var(--htr-forms-input-color2-l), var(--htr-forms-input-color2-a));
+  --htr-forms-input-color3: hsla(var(--htr-forms-input-color3-h), var(--htr-forms-input-color3-s), var(--htr-forms-input-color3-l), var(--htr-forms-input-color3-a));
+
+  padding: var(--htr-forms-input-padding);
+  margin-bottom: var(--htr-forms-input-margin);
+  background-color: var(--htr-forms-input-color1);
+  color: var(--htr-forms-input-color2);
+  border: none;
+  /*border: var(--htr-forms-input-border) solid var(--htr-forms-input-color3);*/
+  font-size: var(--htr-forms-input-font);
+}
+
+.htr input[filled] {
+  border: none;
+  border-bottom: 0.2em solid var(--htr-forms-input-color2);
+}
+
+.htr input:focus, input:active, input:target {
+    border: none;
+}
+
+.htr input::placeholder {
+  margin: 0;
+  transition: 0.3s position;
+}
+
+.htr input:focus::placeholder {
+  opacity: 0.8;
+  top: 0;
+  padding-top: calc((var(--htr-forms-input-padding)) / 2.5);
+  font-size: calc(var(--htr-forms-input-font) / 2);
+  position: absolute;
+}
+
+
+
+
+/**
+ * Specific file input types
+ */
+.htr input[type="file"] {
+    display: none;
+}
+
+.htr input[type="file"] + label {
+    --htr-forms-input-color1: hsla(var(--htr-forms-input-color1-h), var(--htr-forms-input-color1-s), var(--htr-forms-input-color1-l), var(--htr-forms-input-color1-a));
+     --htr-forms-input-color2: hsla(var(--htr-forms-input-color2-h), var(--htr-forms-input-color2-s), var(--htr-forms-input-color2-l), var(--htr-forms-input-color2-a));
+     --htr-forms-input-color3: hsla(var(--htr-forms-input-color3-h), var(--htr-forms-input-color3-s), var(--htr-forms-input-color3-l), var(--htr-forms-input-color3-a));
+
+    padding: var(--htr-forms-input-padding);
+    margin-bottom: var(--htr-forms-input-margin);
+    background-color: var(--htr-forms-input-color1);
+    color: var(--htr-forms-input-color2);
+    border: var(--htr-forms-input-border) solid var(--htr-forms-input-color3);
+    font-size: var(--htr-forms-input-font);
+    display: inline-block;
+}
+
+.htr input[type="file"] + label::after {
+    content: none;
+}
+
+
