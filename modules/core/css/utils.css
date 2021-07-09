@@ -1,0 +1,50 @@
+/**
+ * ---
+ * Rounded edges via rd
+ * ---
+ */
+.htr [rd] {
+  --lvl: 1;
+  --base: 0.2em;
+  border-radius: calc(var(--base) * var(--lvl));
+}
+
+.htr [rd*="p"] {
+  --base: 1%;
+}
+
+
+.htr [rd$="1"] {
+  --lvl: 1;
+}
+
+.htr [rd$="2"] {
+  --lvl: 2;
+}
+
+.htr [rd$="4"] {
+  --lvl: 4;
+}
+
+.htr [rd$="8"] {
+  --lvl: 8;
+}
+
+.htr [rd$="16"] {
+  --lvl: 16;
+}
+
+.htr [rd$="32"] {
+  --lvl: 16;
+}
+
+.htr [rd$="64"] {
+  --lvl: 16;
+}
+
+/**
+ * Circle object
+ */
+.htr [rd="circle"] {
+  --base: 100%;
+}

@@ -1,0 +1,52 @@
+
+.htr {
+  --htr-depth-1-x: 0px;
+  --htr-depth-1-y: 2px;
+  --htr-depth-1-blur: 4px;
+  --htr-depth-1-color: rgb(0, 0, 0, 15%);
+  --htr-depth-2-x: 0px;
+  --htr-depth-2-y: 0.5px;
+  --htr-depth-2-blur: 1px;
+  --htr-depth-2-color: rgb(0, 0, 0, 10%);
+}
+
+/**
+ * Default level 1 usage for grids and cards
+ */
+
+.htr [depth] {
+  --lvl: 1;
+  --depth-1-x: calc(var(--htr-depth-1-x) * var(--lvl));
+  --depth-1-y: calc(var(--htr-depth-1-y) * var(--lvl));
+  --depth-1-blur: calc(var(--htr-depth-1-blur) * var(--lvl));
+  --depth-2-x: calc(var(--htr-depth-2-x) * var(--lvl));
+  --depth-2-y: calc(var(--htr-depth-2-y) * var(--lvl));
+  --depth-2-blur: calc(var(--htr-depth-2-blur) * var(--lvl));
+
+  box-shadow: var(--depth-1-x) var(--depth-1-y) var(--depth-1-blur) var(--htr-depth-1-color), var(--depth-2-x) var(--depth-2-y) var(--depth-2-blur) var(--htr-depth-2-color);
+}
+
+/**
+ * Usage for context menus and navigation bars
+ */
+.htr [depth="2"] {
+  --lvl: 2;
+}
+
+/**
+ * Usage for Hover Cards, Dropdowns ...
+ */
+.htr [depth="4"] {
+  --lvl: 4;
+}
+
+/**
+ * Usage for Panels and Popups
+ */
+.htr [depth="8"] {
+  --lvl: 8;
+}
+
+.htr [depth="16"] {
+  --lvl: 16;
+}
