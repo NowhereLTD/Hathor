@@ -17,7 +17,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           touch minify.css
-          for module in $(find ../modules/ -name '*.css')
+          for module in $(find ./modules/ -name '*.css')
           do
             data=$(cat $module)
             data=${data//[$'\t\r\n']}
