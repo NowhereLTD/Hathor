@@ -16,7 +16,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a multi-line script
         run: |
-          rm minify.css
           touch minify.css
           for module in $(find ../modules/ -name '*.css')
           do
