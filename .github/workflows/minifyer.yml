@@ -23,9 +23,11 @@ jobs:
             data=${data//[$'\t\r\n']}
             echo $data >> minify.css
           done
-      - name: Output minifyed css file
-        uses: actions/upload-artifact@v2
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: minifyed css
-          path: minify.css
-
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            minify.css
