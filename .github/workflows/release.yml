@@ -1,0 +1,38 @@
+name: autorelease
+
+on:
+  push:
+    branches: [ release ]
+  pull_request:
+    branches: [ release ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: minify
+        run: |
+          touch minify.css
+          for module in $(find ./modules/ -name '*.css')
+          do
+            data=$(cat $module)
+            data=${data//[$'\t\r\n']}
+            echo $data >> minify.css
+          done
+      - name: Archive version
+        uses: actions/upload-artifact@v2
+        with:
+          name: minifyed
+          path: minify.css
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Release Build"
+          files: |
+            minify.css
