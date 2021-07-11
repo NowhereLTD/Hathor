@@ -12,47 +12,34 @@
   --htr-forms-input-color2-h: 0;
   --htr-forms-input-color2-s: 0%;
   --htr-forms-input-color2-l: 0%;
-  --htr-forms-input-color2-a: 0.8;
+  --htr-forms-input-color2-a: 80%;
 
   --htr-forms-input-color3-h: 0;
   --htr-forms-input-color3-s: 0%;
   --htr-forms-input-color3-l: 0%;
-  --htr-forms-input-color3-a: 0.8;
+  --htr-forms-input-color3-a: 80%;
 
   --htr-forms-input-color1_hover-h: 0;
   --htr-forms-input-color1_hover-s: 0%;
   --htr-forms-input-color1_hover-l: 100%;
-  --htr-forms-input-color1_hover-a: 0.8;
+  --htr-forms-input-color1_hover-a: 80%;
 
   --htr-forms-input-color2_hover-h: 0;
   --htr-forms-input-color2_hover-s: 0%;
   --htr-forms-input-color2_hover-l: 0%;
-  --htr-forms-input-color2_hover-a: 0.8;
-}
+  --htr-forms-input-color2_hover-a: 80%;
 
-.htr label {
-  display: block;
-  margin-bottom: 2px;
-}
-
-/**
- * Input error label
- */
-.htr label[error] {
-  all: inherit;
-  color: red;
-  margin: 5px 0 0;
-  display: none;
-}
-
-.htr input[filled]:invalid + label[error] {
-  display: inline-block;
+  --htr-forms-input-color_error-h: 0;
+  --htr-forms-input-color_error-s: 80%;
+  --htr-forms-input-color_error-l: 46%;
+  --htr-forms-input-color_error-a: 80%;
 }
 
 .htr input {
   --htr-forms-input-color1: hsla(var(--htr-forms-input-color1-h), var(--htr-forms-input-color1-s), var(--htr-forms-input-color1-l), var(--htr-forms-input-color1-a));
   --htr-forms-input-color2: hsla(var(--htr-forms-input-color2-h), var(--htr-forms-input-color2-s), var(--htr-forms-input-color2-l), var(--htr-forms-input-color2-a));
   --htr-forms-input-color3: hsla(var(--htr-forms-input-color3-h), var(--htr-forms-input-color3-s), var(--htr-forms-input-color3-l), var(--htr-forms-input-color3-a));
+  --htr-forms-input-color_error: hsla(var(--htr-forms-input-color_error-h), var(--htr-forms-input-color_error-s), var(--htr-forms-input-color_error-l), var(--htr-forms-input-color_error-a));
 
   display: block;
   padding: var(--htr-forms-input-padding);
@@ -62,6 +49,30 @@
   border: none;
   /*border: var(--htr-forms-input-border) solid var(--htr-forms-input-color3);*/
   font-size: var(--htr-forms-input-font);
+  user-select: none;
+}
+
+
+.htr label {
+  --htr-forms-input-color_error: hsla(var(--htr-forms-input-color_error-h), var(--htr-forms-input-color_error-s), var(--htr-forms-input-color_error-l), var(--htr-forms-input-color_error-a));
+
+  display: block;
+  margin-bottom: 2px;
+  user-select: none;
+}
+
+/**
+ * Input error label
+ */
+.htr label[error] {
+  all: inherit;
+  color: var(--htr-forms-input-color_error);
+  margin: 5px 0 0;
+  display: none;
+}
+
+.htr input[filled]:invalid + label[error] {
+  display: inline-block;
 }
 
 .htr input[filled] {
@@ -153,6 +164,13 @@
 }
 
 
+/**
+ * Checkbox input
+ */
+.htr input[type="checkbox"] {
+  display: inline-block;
+  cursor: pointer;
+}
 /**
  * Specific switch input
  */
