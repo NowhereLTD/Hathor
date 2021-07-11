@@ -12,38 +12,38 @@
   --htr-theme-green-color1-h: 87;
   --htr-theme-green-color1-s: 100%;
   --htr-theme-green-color1-l: 40%;
-  --htr-theme-green-color1-a: 0.9;
+  --htr-theme-green-color1-a: 90%;
 
   --htr-theme-green-color2-h: 0;
   --htr-theme-green-color2-s: 0%;
   --htr-theme-green-color2-l: 100%;
-  --htr-theme-green-color2-a: 0.9;
+  --htr-theme-green-color2-a: 90%;
 
   --htr-forms-button-color1-h: 87;
   --htr-forms-button-color1-s: 100%;
   --htr-forms-button-color1-l: 40%;
-  --htr-forms-button-color1-a: 0.9;
-  --htr-forms-button-color2-a: 0.9;
+  --htr-forms-button-color1-a: 90%;
+  --htr-forms-button-color2-a: 90%;
 
   --htr-forms-button-color3-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color3-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color3-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color3-a: 0.9;
+  --htr-forms-button-color3-a: 90%;
 
   --htr-forms-button-riffle-color-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-riffle-color-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-riffle-color-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-riffle-color-a: 0.2;
+  --htr-forms-button-riffle-color-a: 20%;
 
   --htr-forms-button-color1_hover-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color1_hover-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color1_hover-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color1_hover-a: 0.75;
+  --htr-forms-button-color1_hover-a: 75%;
 
   --htr-forms-button-color2_hover-h: 0;
   --htr-forms-button-color2_hover-s: 0%;
   --htr-forms-button-color2_hover-l: 100%;
-  --htr-forms-button-color2_hover-a: 0.9;
+  --htr-forms-button-color2_hover-a: 90%;
 }
 
 /**
@@ -53,31 +53,31 @@
   --htr-forms-button-color1-h: 54;
   --htr-forms-button-color1-s: 100%;
   --htr-forms-button-color1-l: 62%;
-  --htr-forms-button-color1-a: 0.9;
+  --htr-forms-button-color1-a: 90%;
   --htr-forms-button-color2-h: 0;
   --htr-forms-button-color2-s: 0%;
   --htr-forms-button-color2-l: 0%;
-  --htr-forms-button-color2-a: 0.9;
+  --htr-forms-button-color2-a: 90%;
 
   --htr-forms-button-color3-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color3-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color3-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color3-a: 0.9;
+  --htr-forms-button-color3-a: 90%;
 
   --htr-forms-button-riffle-color-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-riffle-color-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-riffle-color-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-riffle-color-a: 0.2;
+  --htr-forms-button-riffle-color-a: 20%;
 
   --htr-forms-button-color1_hover-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color1_hover-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color1_hover-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color1_hover-a: 0.75;
+  --htr-forms-button-color1_hover-a: 75%;
 
   --htr-forms-button-color2_hover-h: 0;
   --htr-forms-button-color2_hover-s: 0%;
   --htr-forms-button-color2_hover-l: 0%;
-  --htr-forms-button-color2_hover-a: 0.9;
+  --htr-forms-button-color2_hover-a: 90%;
 }
 
 /**
@@ -87,31 +87,31 @@
   --htr-forms-button-color1-h: 15;
   --htr-forms-button-color1-s: 100%;
   --htr-forms-button-color1-l: 50%;
-  --htr-forms-button-color1-a: 0.9;
+  --htr-forms-button-color1-a: 90%;
   --htr-forms-button-color2-h: 0;
   --htr-forms-button-color2-s: 0%;
   --htr-forms-button-color2-l: 100%;
-  --htr-forms-button-color2-a: 0.9;
+  --htr-forms-button-color2-a: 90%;
 
   --htr-forms-button-color3-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color3-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color3-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color3-a: 0.9;
+  --htr-forms-button-color3-a: 90%;
 
   --htr-forms-button-riffle-color-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-riffle-color-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-riffle-color-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-riffle-color-a: 0.2;
+  --htr-forms-button-riffle-color-a: 20%;
 
   --htr-forms-button-color1_hover-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color1_hover-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color1_hover-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color1_hover-a: 0.75;
+  --htr-forms-button-color1_hover-a: 75%;
 
   --htr-forms-button-color2_hover-h: 0;
   --htr-forms-button-color2_hover-s: 0%;
   --htr-forms-button-color2_hover-l: 100%;
-  --htr-forms-button-color2_hover-a: 0.9;
+  --htr-forms-button-color2_hover-a: 90%;
 }
 
 /**
@@ -121,29 +121,29 @@
   --htr-forms-button-color1-h: 252;
   --htr-forms-button-color1-s: 100%;
   --htr-forms-button-color1-l: 50%;
-  --htr-forms-button-color1-a: 0.9;
+  --htr-forms-button-color1-a: 90%;
   --htr-forms-button-color2-h: 0;
   --htr-forms-button-color2-s: 0%;
   --htr-forms-button-color2-l: 100%;
-  --htr-forms-button-color2-a: 0.9;
+  --htr-forms-button-color2-a: 90%;
 
   --htr-forms-button-color3-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color3-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color3-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color3-a: 0.9;
+  --htr-forms-button-color3-a: 90%;
 
   --htr-forms-button-riffle-color-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-riffle-color-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-riffle-color-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-riffle-color-a: 0.2;
+  --htr-forms-button-riffle-color-a: 20%;
 
   --htr-forms-button-color1_hover-h: var(--htr-forms-button-color1-h);
   --htr-forms-button-color1_hover-s: var(--htr-forms-button-color1-s);
   --htr-forms-button-color1_hover-l: var(--htr-forms-button-color1-l);
-  --htr-forms-button-color1_hover-a: 0.75;
+  --htr-forms-button-color1_hover-a: 75%;
 
   --htr-forms-button-color2_hover-h: 252deg;
   --htr-forms-button-color2_hover-s: 0%;
   --htr-forms-button-color2_hover-l: 100%;
-  --htr-forms-button-color2_hover-a: 0.9;
+  --htr-forms-button-color2_hover-a: 90%;
 }

@@ -3,37 +3,37 @@
   --htr-forms-button-color1-h: 0;
   --htr-forms-button-color1-s: 0%;
   --htr-forms-button-color1-l: 0%;
-  --htr-forms-button-color1-a: 0.8;
+  --htr-forms-button-color1-a: 80%;
 
   --htr-forms-button-color2-h: 0;
   --htr-forms-button-color2-s: 0%;
   --htr-forms-button-color2-l: 100%;
-  --htr-forms-button-color2-a: 0.8;
+  --htr-forms-button-color2-a: 80%;
 
   --htr-forms-button-color3-h: 0;
   --htr-forms-button-color3-s: 0%;
   --htr-forms-button-color3-l: 0%;
-  --htr-forms-button-color3-a: 0.8;
+  --htr-forms-button-color3-a: 80%;
 
   --htr-forms-button-color1_hover-h: 0;
   --htr-forms-button-color1_hover-s: 0%;
   --htr-forms-button-color1_hover-l: 100%;
-  --htr-forms-button-color1_hover-a: 0.8;
+  --htr-forms-button-color1_hover-a: 80%;
 
   --htr-forms-button-color2_hover-h: 0;
   --htr-forms-button-color2_hover-s: 0%;
   --htr-forms-button-color2_hover-l: 0%;
-  --htr-forms-button-color2_hover-a: 0.8;
+  --htr-forms-button-color2_hover-a: 80%;
 
   --htr-forms-button-color1_disabled-h: 0;
   --htr-forms-button-color1_disabled-s: 0%;
   --htr-forms-button-color1_disabled-l: 0%;
-  --htr-forms-button-color1_disabled-a: 0.5;
+  --htr-forms-button-color1_disabled-a: 50%;
 
   --htr-forms-button-color2_disabled-h: 0;
   --htr-forms-button-color2_disabled-s: 0%;
   --htr-forms-button-color2_disabled-l: 100%;
-  --htr-forms-button-color2_disabled-a: 1;
+  --htr-forms-button-color2_disabled-a: 100%;
 
   /**
    * Riffle colors
