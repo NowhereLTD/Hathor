@@ -15,7 +15,6 @@
   --htr-navigation-links-color1: hsla(var(--htr-navigation-links-color1-h), var(--htr-navigation-links-color1-s), var(--htr-navigation-links-color1-l), var(--htr-navigation-links-color1-a));
   --htr-navigation-links-color_hover: hsla(var(--htr-navigation-links-color_hover-h), var(--htr-navigation-links-color_hover-s), var(--htr-navigation-links-color_hover-l), var(--htr-navigation-links-color_hover-a));
 
-
   display: block;
   padding: 1em;
   text-decoration: none;

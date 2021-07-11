@@ -1,0 +1,105 @@
+
+.htr {
+  --htr-animations-fade-translation-x: 0;
+  --htr-animations-fade-translation-y: 0;
+  --htr-animations-fade-translation-z: 0;
+  --htr-animations-duration: 0.5s;
+}
+
+.htr *[fade] {
+  animation: fade var(--htr-animations-duration) ease-out forwards;
+}
+
+.htr *[fade="left"] {
+  --htr-animations-fade-translation-x: -1em;
+}
+
+.htr *[fade="right"] {
+  --htr-animations-fade-translation-x: 1em;
+}
+
+.htr *[fade="top"] {
+  --htr-animations-fade-translation-y: -1em;
+}
+
+.htr *[fade="bottom"] {
+  --htr-animations-fade-translation-y: 1em;
+}
+
+/**
+ * Set self x fade value
+ */
+.htr *[fade*="x01"] {
+  --htr-animations-fade-translation-x: 0.1em;
+}
+
+.htr *[fade*="x02"] {
+  --htr-animations-fade-translation-x: 0.2em;
+}
+
+.htr *[fade*="x05"] {
+  --htr-animations-fade-translation-x: 0.5em;
+}
+
+.htr *[fade*="x10"] {
+  --htr-animations-fade-translation-x: 1em;
+}
+
+.htr *[fade*="x15"] {
+  --htr-animations-fade-translation-x: 1.5em;
+}
+
+.htr *[fade*="x20"] {
+  --htr-animations-fade-translation-x: 2em;
+}
+
+/**
+ * Set self y fade value
+ */
+ .htr *[fade*="y01"] {
+   --htr-animations-fade-translation-y: 0.1em;
+ }
+
+ .htr *[fade*="y02"] {
+   --htr-animations-fade-translation-y: 0.2em;
+ }
+
+ .htr *[fade*="y05"] {
+   --htr-animations-fade-translation-y: 0.5em;
+ }
+
+ .htr *[fade*="y10"] {
+   --htr-animations-fade-translation-y: 1em;
+ }
+
+ .htr *[fade*="y15"] {
+   --htr-animations-fade-translation-y: 1.5em;
+ }
+
+ .htr *[fade*="y20"] {
+   --htr-animations-fade-translation-y: 2em;
+ }
+
+
+/**
+ * Negate x and y value
+ */
+.htr *[fade*="negX"] {
+  --htr-animations-fade-translation-x: calc(var(--htr-animations-fade-translation-x) * -1);
+}
+
+.htr *[fade*="negY"] {
+  --htr-animations-fade-translation-Y: calc(var(--htr-animations-fade-translation-Y) * -1);
+}
+
+
+
+
+@keyframes fade {
+  from {
+    transform: translate(var(--htr-animations-fade-translation-x), var(--htr-animations-fade-translation-y));
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}

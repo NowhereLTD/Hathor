@@ -39,29 +39,29 @@
       <article id="home">
         <center><h1>Home</h1></center>
         <section style="display: flex;">
-          <section fs="d0" fe="d3" depth>
+          <section fs="d0" fe="d3" depth fade="left">
             <center><h2>CSS3 based</h2></center>
             Hathor is deployed in love with CSS3 and without JS.
           </section>
-          <section fs="d1" fe="d3" depth>
+          <section fs="d1" fe="d3" depth fade="top">
             <center><h2>Modern Design Standards</h2></center>
             Hathor based on <a href="https://material.io/">Googles Material Design</a> and on <a href="https://www.microsoft.com/design/fluent/#/">Microsofts Fluent Design</a> standards.
           </section>
-          <section fs="d1" fe="d3" depth>
+          <section fs="d1" fe="d3" depth fade="right">
             <center><h2>Simple Extendable</h2></center>
             Hathor can easy expand with new Tools, Features or Modules.
           </section>
         </section>
         <section style="display: flex;">
-          <section fs="d0" fe="d3" depth>
+          <section fs="d0" fe="d3" depth fade="left">
             <center><h2>Combineable modules</h2></center>
             It is simple to include only parts of the Hathor libary.
           </section>
-          <section fs="d1" fe="d3" depth>
+          <section fs="d1" fe="d3" depth fade="bottom">
             <center><h2>Very small</h2></center>
             Complete minifyed size < 50KB.
           </section>
-          <section fs="d1" fe="d3" depth>
+          <section fs="d1" fe="d3" depth fade="right">
             <center><h2>Color Theming</h2></center>
             Switch the color theme by setting one attribute in HTML source code.
           </section>
@@ -132,11 +132,31 @@
             </ul>
           </section>
         </section>
+        <section style="display: flex;">
+          <section fs="d0" fe="d3" depth>
+            <center><h2>Animations</h2></center>
+            The animation module includes:<br>
+            <ul>
+              <li>Timing</li>
+              <li>Fade animations</li>
+            </ul>
+          </section>
+        </section>
       </article>
       <article id="themes">
         <center><h1>Theming</h1></center>
         <section fs="d1" fe="d10" depth>
-          Currently in progress.
+          <h2>Include a theme</h2>
+          A theme can be simple include by using the <i>"theme"</i> attribute.<br><br>
+          <code fs="d0" fe="d8" depth>
+            &lt;body class="htr" theme="green"&gt;<br>
+            &nbsp;&nbsp;&lt;!-- A grid example with sidebar navigation --&gt;<br>
+            &nbsp;&nbsp;&lt;aside fs="d0" fe="d2" depth="4" theme="red"&gt;<br>
+            &nbsp;&nbsp;&lt;/aside&gt;<br>
+            &nbsp;&nbsp;&lt;main fs="d2" fe="d12"&gt;<br>
+            &nbsp;&nbsp;&lt;/main&gt;<br>
+            &lt;/body&gt;
+          </code>
         </section>
       </article>
     </main>
