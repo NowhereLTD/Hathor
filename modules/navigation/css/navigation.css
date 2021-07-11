@@ -1,0 +1,10 @@
+
+.htr nav {
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.htr nav hr {
+  margin: 0;
+}

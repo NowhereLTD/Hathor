@@ -1,0 +1,14 @@
+
+.htr {
+  --htr-navigation-links-color1-h: 0;
+  --htr-navigation-links-color1-s: 0%;
+  --htr-navigation-links-color1-l: 0%;
+  --htr-navigation-links-color1-a: 80%;
+}
+
+.htr nav a {
+  --htr-navigation-links-color1: hsla(var(--htr-navigation-links-color1-h), var(--htr-navigation-links-color1-s), var(--htr-navigation-links-color1-l), var(--htr-navigation-links-color1-a));
+
+  text-decoration: none;
+  color: var(--htr-navigation-links-color1);
+}

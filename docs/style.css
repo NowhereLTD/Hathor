@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.htr {
+  display: flex;
+}
+
+.htr aside {
+  position: fixed;
+}
+
+.htr article {
+  padding: 1em;
+  min-height: 100vh;
+}
+
+.htr section {
+  padding: 1em;
+}
+
+.htr code {
+  display: block;
+  padding: 1em;
+}
+
+.htr h1 {
+  font-size: 2em;
+}
