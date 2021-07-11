@@ -1,0 +1,35 @@
+.htr {
+  --htr-animations-duration: 0.5s;
+}
+
+.htr *[dur="1"] {
+   --htr-animations-duration: 0.1s;
+}
+
+.htr *[dur="2"] {
+   --htr-animations-duration: 0.2s;
+}
+
+.htr *[dur="5"] {
+   --htr-animations-duration: 0.5s;
+}
+
+.htr *[dur="10"] {
+   --htr-animations-duration: 1s;
+}
+
+.htr *[dur="15"] {
+   --htr-animations-duration: 1.5s;
+}
+
+.htr *[dur="20"] {
+   --htr-animations-duration: 2s;
+}
+
+.htr *[dur="50"] {
+   --htr-animations-duration: 5s;
+}
+
+.htr *[dur="100"] {
+   --htr-animations-duration: 10s;
+}

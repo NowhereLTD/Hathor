@@ -1,3 +1,15 @@
+.htr {
+  --htr-core-utils-links-color1-h: 0;
+  --htr-core-utils-links-color1-s: 0%;
+  --htr-core-utils-links-color1-l: 0%;
+  --htr-core-utils-links-color1-a: 60%;
+
+  --htr-core-utils-links-color_hover-h: 0;
+  --htr-core-utils-links-color_hover-s: 0%;
+  --htr-core-utils-links-color_hover-l: 0%;
+  --htr-core-utils-links-color_hover-a: 10%;
+}
+
 /**
  * ---
  * Rounded edges via rd
@@ -47,4 +59,20 @@
  */
 .htr [rd="circle"] {
   --base: 100%;
+}
+
+/**
+ * Styled links
+ */
+.htr a {
+  --htr-core-utils-links-color1: hsla(var(--htr-core-utils-links-color1-h), var(--htr-core-utils-links-color1-s), var(--htr-core-utils-links-color1-l), var(--htr-core-utils-links-color1-a));
+  --htr-core-utils-links-color_hover: hsla(var(--htr-core-utils-links-color_hover-h), var(--htr-core-utils-links-color_hover-s), var(--htr-core-utils-links-color_hover-l), var(--htr-core-utils-links-color_hover-a));
+
+  text-decoration: none;
+  color: var(--htr-core-utils-links-color1);
+  transition: background-color 0.2s;
+}
+
+.htr a:hover {
+  background-color: var(--htr-core-utils-links-color_hover);
 }
