@@ -4,11 +4,25 @@
   --htr-navigation-links-color1-s: 0%;
   --htr-navigation-links-color1-l: 0%;
   --htr-navigation-links-color1-a: 80%;
+
+  --htr-navigation-links-color_hover-h: 0;
+  --htr-navigation-links-color_hover-s: 0%;
+  --htr-navigation-links-color_hover-l: 0%;
+  --htr-navigation-links-color_hover-a: 10%;
 }
 
 .htr nav a {
   --htr-navigation-links-color1: hsla(var(--htr-navigation-links-color1-h), var(--htr-navigation-links-color1-s), var(--htr-navigation-links-color1-l), var(--htr-navigation-links-color1-a));
+  --htr-navigation-links-color_hover: hsla(var(--htr-navigation-links-color_hover-h), var(--htr-navigation-links-color_hover-s), var(--htr-navigation-links-color_hover-l), var(--htr-navigation-links-color_hover-a));
 
+
+  display: block;
+  padding: 1em;
   text-decoration: none;
   color: var(--htr-navigation-links-color1);
+  transition: background-color 0.2s;
+}
+
+.htr nav a:hover {
+  background-color: var(--htr-navigation-links-color_hover);
 }
