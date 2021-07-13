@@ -1,0 +1,28 @@
+
+.htr {
+  --htr-data-barchart-margin: 0.5em;
+  --htr-data-barchart-width: 1em;
+  --htr-data-barchart-mult: 1%;
+  --htr-data-barchart-rot: 180deg;
+
+  --htr-data-barchart-color1-h: 0;
+  --htr-data-barchart-color1-s: 0%;
+  --htr-data-barchart-color1-l: 0%;
+  --htr-data-barchart-color1-a: 40%;
+}
+
+.htr .barchart {
+  --htr-data-barchart-color1: hsla(var(--htr-data-barchart-color1-h), var(--htr-data-barchart-color1-s), var(--htr-data-barchart-color1-l), var(--htr-data-barchart-color1-a));
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transform: rotate(var(--htr-data-barchart-rot));
+}
+
+.htr .barchart dd {
+  background-color: var(--htr-data-barchart-color1);
+  margin: var(--htr-data-barchart-margin);
+  height: calc(var(--htr-data-value) * var(--htr-data-barchart-mult));
+  width: var(--htr-data-barchart-width);
+}
