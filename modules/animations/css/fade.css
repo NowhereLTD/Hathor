@@ -4,10 +4,13 @@
   --htr-animations-fade-translation-y: 0;
   --htr-animations-fade-translation-z: 0;
   --htr-animations-duration: 0.5s;
+  --htr-animations-delay: 0s;
 }
 
 .htr *[fade] {
+  opacity: 0;
   animation: fade var(--htr-animations-duration) ease-out forwards;
+  animation-delay: var(--htr-animations-delay);
 }
 
 .htr *[fade="left"] {
@@ -97,9 +100,11 @@
 
 @keyframes fade {
   from {
+    opacity: 1;
     transform: translate(var(--htr-animations-fade-translation-x), var(--htr-animations-fade-translation-y));
   }
   to {
+    opacity: 1;
     transform: translate(0, 0);
   }
 }

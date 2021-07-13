@@ -1,0 +1,55 @@
+.htr {
+  --htr-animations-delay: 0s;
+}
+
+.htr *[del="1"] {
+   --htr-animations-delay: 0.1s;
+}
+
+.htr *[del="2"] {
+   --htr-animations-delay: 0.2s;
+}
+
+.htr *[del="5"] {
+   --htr-animations-delay: 0.5s;
+}
+
+.htr *[del="10"] {
+   --htr-animations-delay: 1s;
+}
+
+.htr *[del="15"] {
+   --htr-animations-delay: 1.5s;
+}
+
+.htr *[del="20"] {
+   --htr-animations-delay: 2s;
+}
+
+.htr *[del="25"] {
+   --htr-animations-delay: 2.5s;
+}
+
+.htr *[del="30"] {
+   --htr-animations-delay: 3s;
+}
+
+.htr *[del="35"] {
+   --htr-animations-delay: 3.5s;
+}
+
+.htr *[del="40"] {
+   --htr-animations-delay: 4s;
+}
+
+.htr *[del="45"] {
+   --htr-animations-delay: 4.5s;
+}
+
+.htr *[del="50"] {
+   --htr-animations-delay: 5s;
+}
+
+.htr *[del="100"] {
+   --htr-animations-delay: 10s;
+}

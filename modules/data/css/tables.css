@@ -1,0 +1,37 @@
+.htr {
+  --htr-data-table-linecolor-h: 0;
+  --htr-data-table-linecolor-s: 0%;
+  --htr-data-table-linecolor-l: 0%;
+  --htr-data-table-linecolor-a: 40%;
+
+  --htr-data-table-hover-h: 0;
+  --htr-data-table-hover-s: 0%;
+  --htr-data-table-hover-l: 0%;
+  --htr-data-table-hover-a: 5%;
+}
+
+.htr table {
+  --htr-data-table-linecolor: hsla(var(--htr-data-table-linecolor-h), var(--htr-data-table-linecolor-s), var(--htr-data-table-linecolor-l), var(--htr-data-table-linecolor-a));
+  --htr-data-table-hover: hsla(var(--htr-data-table-hover-h), var(--htr-data-table-hover-s), var(--htr-data-table-hover-l), var(--htr-data-table-hover-a));
+
+  border-collapse: collapse;
+  border: 1px solid var(--htr-data-table-linecolor);
+}
+
+.htr table td, .htr table th {
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid var(--htr-data-table-linecolor);
+}
+
+.htr table tr:hover {
+  background: var(--htr-data-table-hover);
+}
+
+.htr table :first-child:hover {
+  background: transparent;
+}
+
+.htr table th {
+  font-weight: bold;
+}
