@@ -1,3 +1,10 @@
+/**
+ * Implement faktor calculation instanceof usage percent system
+ * implement for degree value (360) with factor calculation
+ * negative factor calcation
+ */
+
+
 .htr *[val="0"] {
 	 --htr-data-value: 0;
 }

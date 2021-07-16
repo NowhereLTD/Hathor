@@ -95,9 +95,6 @@
   --htr-animations-fade-translation-Y: calc(var(--htr-animations-fade-translation-Y) * -1);
 }
 
-
-
-
 @keyframes fade {
   from {
     opacity: 1;
