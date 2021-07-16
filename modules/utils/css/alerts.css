@@ -1,0 +1,26 @@
+.htr *[alert] {
+  position: relative;
+  height: 50px;
+}
+
+.htr *[alert] input {
+  display: none;
+}
+
+.htr *[alert] input ~ label {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.htr *[alert] input:checked ~ label {
+  display: none;
+}
+
+
+.htr *[alert] input:checked ~ section {
+  display: none;
+}
